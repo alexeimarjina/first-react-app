@@ -1,0 +1,26 @@
+.ul{
+    list-style: none;
+}
+
+.nav{
+    margin-left: 11px;
+    width: 20%;
+    background-color: #238754;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.link.active {
+    color: red;
+}
+
+.li:last-child{
+    margin-top: 50px;
+}
+
+.li:first-child{
+    margin-top: 50px;
+}
