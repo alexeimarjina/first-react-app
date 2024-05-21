@@ -11,3 +11,9 @@
 .posts img{
     border-radius: 50%;
 }
+
+.like{
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+}

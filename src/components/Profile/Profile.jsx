@@ -26,7 +26,8 @@ function Profile() {
                     <button className={classes.addPost}>Add Post</button>
                 </label>
             </div>
-            <Posts message='test'/>
+            <Posts message='Lorem' likesCounts='20' />
+            <Posts message='test1' likesCounts='10' />
         </div>
     );
 }

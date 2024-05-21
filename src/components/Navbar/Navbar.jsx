@@ -5,10 +5,10 @@ function Navbar() {
             <nav className={classes.nav}>
                 <ul className={classes.ul}>
                     <li className={classes.li}>
-                        <a href="/simple-page-react/public" className={`${classes.link} ${classes.active}`}>Profile</a>
+                        <a href="/profile" className={`${classes.link} ${classes.active}`}>Profile</a>
                     </li>
                     <li className={classes.li}>
-                        <a href="/simple-page-react/public" className={classes.link}>Messages</a>
+                        <a href="/dialogs" className={classes.link}>Messages</a>
                     </li>
                     <li className={classes.li}>
                         <a href="/simple-page-react/public" className={classes.link}>News</a>
