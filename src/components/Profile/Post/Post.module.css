@@ -5,9 +5,16 @@
 }
 
 .postText{
-    margin-left: 20px;
+    margin-bottom: 0;
 }
 
 .posts img{
     border-radius: 50%;
+}
+
+.like {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: auto;
 }
