@@ -1,26 +1,37 @@
 import classes from './Navbar.module.css';
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
-    return(
-            <nav className={classes.nav}>
-                <ul className={classes.ul}>
-                    <li className={classes.li}>
-                        <a href="/profile" className={`${classes.link} ${classes.active}`}>Profile</a>
-                    </li>
-                    <li className={classes.li}>
-                        <a href="/dialogs" className={classes.link}>Messages</a>
-                    </li>
-                    <li className={classes.li}>
-                        <a href="/news" className={classes.link}>News</a>
-                    </li>
-                    <li className={classes.li}>
-                        <a href="/music" className={classes.link}>Music</a>
-                    </li>
-                    <li className={classes.li}>
-                        <a href="/settings" className={classes.link}>Settings</a>
-                    </li>
-                </ul>
-            </nav>
+    return (
+        <nav className={classes.nav}>
+            <ul className={classes.ul}>
+                <li className={classes.li}>
+                    <NavLink to="/profile" className={({ isActive }) => isActive ? classes.activeLink : classes.link}>
+                        Profile
+                    </NavLink>
+                </li>
+                <li className={classes.li}>
+                    <NavLink to="/dialogs" className={({ isActive }) => isActive ? classes.activeLink : classes.link}>
+                        Messages
+                    </NavLink>
+                </li>
+                <li className={classes.li}>
+                    <NavLink to="/news" className={({ isActive }) => isActive ? classes.activeLink : classes.link}>
+                        News
+                    </NavLink>
+                </li>
+                <li className={classes.li}>
+                    <NavLink to="/music" className={({ isActive }) => isActive ? classes.activeLink : classes.link}>
+                        Music
+                    </NavLink>
+                </li>
+                <li className={classes.li}>
+                    <NavLink to="/settings" className={({ isActive }) => isActive ? classes.activeLink : classes.link}>
+                        Settings
+                    </NavLink>
+                </li>
+            </ul>
+        </nav>
     );
 }
 

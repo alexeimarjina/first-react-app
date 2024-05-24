@@ -1,3 +1,15 @@
 .right{
     width: 70%;
 }
+
+
+
+.dialogBody{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+
+

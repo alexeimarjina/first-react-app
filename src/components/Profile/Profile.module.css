@@ -46,3 +46,6 @@
     justify-content: center;
     align-self: flex-end;
 }
+.postContent{
+    resize: none;
+}

@@ -22,13 +22,12 @@ function Profile() {
             <div className={classes.post}>
                 <label className={classes.form}>
                     <h3 className={classes.formtitle}>My post</h3>
-                    <textarea name="postCotent" rows={4} cols={40}/>
+                    <textarea className={classes.postContent} rows={4} cols={40}/>
                     <button className={classes.addPost}>Add Post</button>
                 </label>
             </div>
             <Posts message='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' likeCount='20'/>
             <Posts message='test' likeCount='10'/>
-
         </div>
     );
 }

@@ -1,9 +1,14 @@
 import classes from "./Dialogs.module.css";
+import Box from "./Box/Box";
+import Item from "./Items/Item";
 
 function Dialogs() {
     return(
         <div className={classes.right}>
-            Dialogs
+            <div className={classes.dialogBody}>
+                <Box/>
+                <Item/>
+            </div>
         </div>
     )
 }

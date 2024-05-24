@@ -1,0 +1,25 @@
+.dialogItems{
+    position: relative;
+}
+
+.dialogItems::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    right: -200px;
+    background: #000;
+}
+
+.dialogTitle{}
+
+.list{}
+
+.itemList{
+    margin-top: 50px;
+}
+
+.itemActive{
+    color: #0a53be;
+}
