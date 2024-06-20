@@ -1,36 +1,24 @@
 import classes from "./Items.module.css";
 
-function  Item() {
+function ItemMessage({ imgSrc, name, text }) {
+    return (
+        <div className={classes.message}>
+            <div className={classes.messageImg}>
+                <img src={imgSrc} alt={name} />
+                <h4 className={classes.messageName}>{name}</h4>
+            </div>
+            <p className={classes.dialogText}>{text}</p>
+        </div>
+    )
+}
+
+function Item() {
     return (
         <div className={classes.dialogBox}>
-            <div className={classes.message}>
-                <div className={classes.messageImg}>
-                    <img src="https://fakeimg.pl/100/"/>
-                    <h4 className={classes.messageName}>Aima</h4>
-                </div>
-                <p className={classes.dialogText}>Lorem lorem lorem lorem lorem lorem lorem</p>
-            </div>
-            <div className={classes.message}>
-                <div className={classes.messageImg}>
-                    <img src="https://fakeimg.pl/100/"/>
-                    <h4 className={classes.messageName}>Lucky</h4>
-                </div>
-                <p className={classes.dialogText}>Lorem lorem lorem lorem lorem lorem lorem</p>
-            </div>
-            <div className={classes.message}>
-                <div className={classes.messageImg}>
-                    <img src="https://fakeimg.pl/100/"/>
-                    <h4 className={classes.messageName}>Shiva</h4>
-                </div>
-                <p className={classes.dialogText}>Lorem lorem lorem lorem lorem lorem lorem</p>
-            </div>
-            <div className={classes.message}>
-                <div className={classes.messageImg}>
-                    <img src="https://fakeimg.pl/100/"/>
-                    <h4 className={classes.messageName}>Mite</h4>
-                </div>
-                <p className={classes.dialogText}>Lorem lorem lorem lorem lorem lorem lorem</p>
-            </div>
+            <ItemMessage imgSrc="https://fakeimg.pl/100/" name="Aima" text="Lorem lorem lorem lorem lorem lorem lorem" />
+            <ItemMessage imgSrc="https://fakeimg.pl/100/" name="Lucky" text="Lorem lorem lorem lorem lorem lorem lorem" />
+            <ItemMessage imgSrc="https://fakeimg.pl/100/" name="Shiva" text="Lorem lorem lorem lorem lorem lorem lorem" />
+            <ItemMessage imgSrc="https://fakeimg.pl/100/" name="Mite" text="Lorem lorem lorem lorem lorem lorem lorem" />
         </div>
     )
 }
